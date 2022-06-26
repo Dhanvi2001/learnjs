@@ -1,8 +1,8 @@
-function merge(cars, fruits) {
-    return [...cars, ...fruits];
+function merge() {
+    const arr1 = Array(prompt("enter first array"));
+    const arr2 = Array(prompt("enter second array"));
+    const arr3 = [...arr1, ...arr2];
+    console.log(arr3);
 }
 
-const cars = ["saab", "bmw", "toyota"];
-const fruits = ["cheery", "apple", "kiwi"];
-
-merge(cars, fruits);
+merge()
