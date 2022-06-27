@@ -11,12 +11,43 @@ function average() {
     for (i = 0; i < myArr.length; i++) {
         sum = sum + myArr[i];
     }
-    avg = sum / myArr.length
+    avg = sum / myArr.length;
     console.log(avg);
 }
-var max = Math.max(...myArr);
-var min = Math.min(...myArr);
 
-console.log(max);
-console.log(min);
+
+function max() {
+
+    var m = 0;
+    var i;
+    for (i = 0; i < myArr.length; i++) {
+
+        if (myArr[i] > m) {
+
+            m = myArr[i];
+
+        }
+
+    }
+    console.log(m);
+}
+
+
+function min() {
+
+    var m = Infinity;
+    var i;
+    for (i = 0; i < myArr.length; i++) {
+
+        if (myArr[i] < m) {
+
+            m = myArr[i];
+
+        }
+
+    }
+    console.log(m);
+}
+min();
+max();
 average()
