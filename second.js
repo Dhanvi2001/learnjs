@@ -1,5 +1,5 @@
 var num = prompt("Enter the number");
-var myArr = num.split("").map((num) => {
+var myArr = num.split(" ").map((num) => {
     return Number(num)
 })
 
