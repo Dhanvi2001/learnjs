@@ -1,8 +1,8 @@
-function merge() {
-    const arr1 = Array(prompt("enter first array"));
-    const arr2 = Array(prompt("enter second array"));
-    const arr3 = [...arr1, ...arr2];
-    console.log(arr3);
-}
+const arr1 = Array(prompt("enter").split(" "));
+const arr2 = Array(prompt("enter").split(" "));
 
-merge()
+const merged = [...arr1, ...arr2];
+
+console.log(merged);
+console.log(arr1);
+console.log(arr2);
