@@ -1,16 +1,6 @@
-var num = prompt("Enter the number");
-var myArr = num.split(" ").map((num) => {
-    return Number(num)
-})
-
-console.log(myArr)
+let str = prompt("Enter the values").split(",").map(Number);
 let sum = 0;
-
-function add() {
-
-    for (i = 0; i < myArr.length; i++) {
-        sum = sum + myArr[i];
-    }
-    console.log(sum);
+for (let i = 0; i < str.length; i++) {
+    sum = sum + str[i];
 }
-add()
+console.log(sum);
