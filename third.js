@@ -11,7 +11,7 @@ function average() {
     for (i = 0; i < myArr.length; i++) {
         sum = sum + myArr[i];
     }
-    avg = sum / myArr.length + 1;
+    avg = sum / myArr.length;
     console.log(avg);
 }
 
