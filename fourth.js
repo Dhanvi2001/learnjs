@@ -6,8 +6,6 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-
-
 rl.question('Height of the well ', (answer) => {
     let height = Number(answer);
     let climb = Number(0);
