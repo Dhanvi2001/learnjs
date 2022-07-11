@@ -3,12 +3,12 @@ var os = require('os');
 
 var app = express();
 app.set('view engine', 'ejs');
-app.get('/home', function(req, res) {
-    res.sendFile(os.homedir + '/learnjs/home.html');
+app.get('/', function(req, res) {
+    res.render(os.homedir + '/learnjs/view/partials/index.ejs');
 });
 
 app.get('/contact', function(req, res) {
-    res.sendFile(os.homedir + '/learnjs/contact.html');
+    res.render(os.homedir + '/learnjs/view/partials/contact.ejs');
 });
 
 app.get('/profile/:name', function(req, res) {
