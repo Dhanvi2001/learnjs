@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <link rel="Stylesheet" type="text/css" href="/css/style1.css">
+</head>
+
+<body>
+    <%- include("../ejs/nav.ejs") %>
+        <h1>Welcome to prfile detalis of the most awesome website
+            <%=person %>.</h1>
+        <p> Below mention information are as per our servey.</p>
+        <h2>Age:
+            <%=data.age%>
+        </h2>
+        <h2>Employment:
+            <%=data.employ%>
+        </h2>
+        <ul>
+            <%data.hobbies.forEach(function(item){%>
+                <li>
+                    <%= item %>
+                </li>
+                <% }); %>
+        </ul>
+
+</body>
+
+</html>
