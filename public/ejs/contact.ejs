@@ -9,6 +9,17 @@
         <h1>Welcome to contact detalis of the most awesome website.</h1>
         <p>This are ways you can contact us.</p>
         <p>Thankyou for visiting us</p>
+
+        <form id="contact-form" method="post" action="/contact">
+            <label for="who">Who do you want to contact?</label>
+            <input type="text" name="who" id="name" value="<%=qs.name%>"><br>
+            <label for="department">Which department?</label>
+            <input type="text" name="department" id="name" value="<%=qs.dept%>"><br>
+            <label for="email">Your Email</label>
+            <input type="email" name="email" id="name"><br>
+            <input type="submit" name="submit" id="submit"><br>
+
+        </form>
 </body>
 
 </html>
