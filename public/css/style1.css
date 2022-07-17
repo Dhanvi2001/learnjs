@@ -12,7 +12,8 @@ h1 {
     letter-spacing: 2px;
 }
 
-p {
+p,
+nav {
     font-size: 40px;
     font-style: normal;
     text-align: center;
@@ -32,4 +33,28 @@ li {
     font-style: normal;
     text-align: center;
     letter-spacing: 2px;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    width: 400px;
+}
+
+input {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+form {
+    margin: 200px 350px;
+}
+
+input#submit {
+    width: 678px;
+    margin: 20px 0px;
 }
